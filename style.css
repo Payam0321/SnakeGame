@@ -1,0 +1,55 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url("Seven Segment.ttf");
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:myFirstFont;
+    font-weight: 800;
+    font-size: 20px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #cbeb16;
+}
+.wrapper{
+    width: 65vmin;
+    height: 70vmin;
+    background: #293347;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.game-details{
+    color: #B8c6dc;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template:repeat(30,1fr) / repeat(30,1fr) ;
+    background-color: #212837;
+}
+
+.play-board .food{
+    background-color: #ff003d;
+}
+
+.head{
+    background-color: #60cbFF;
+    border: 1px solid black;
+}
